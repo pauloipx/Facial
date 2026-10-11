@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Face Verify</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Mini Face Verify</h1>
+      <p class="subtitle">Regista e verifica rosto com a câmara do PC ou telemóvel.</p>
+
+      <section class="panel">
+        <label for="userId">ID do utilizador</label>
+        <input id="userId" type="text" placeholder="ex: paulo01" />
+
+        <div class="video-wrap">
+          <video id="video" autoplay playsinline muted></video>
+          <canvas id="canvas" width="640" height="480"></canvas>
+        </div>
+
+        <div class="actions">
+          <button id="startBtn">Iniciar Câmara</button>
+          <button id="captureBtn">Capturar</button>
+          <button id="enrollBtn">Registar Face</button>
+          <button id="verifyBtn">Verificar Face</button>
+        </div>
+        <p id="status">Estado: pronto.</p>
+      </section>
+    </main>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
